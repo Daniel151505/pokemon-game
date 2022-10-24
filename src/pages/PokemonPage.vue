@@ -8,6 +8,8 @@
             :pokemonId="pokemon.id" 
             :showPokemon="showPokemon" 
         />
+        <br>
+        <br>
         <PokemonOptions 
             :pokemons="pokemonArr"
             @selection="checkAnswer"

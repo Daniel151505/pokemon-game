@@ -1,13 +1,13 @@
 <template>
     <div class="options-container">
-        <ul>
+        <div>
             <li 
                 v-for="pokemon in pokemons" 
                 :key="pokemon.id"
                 @click="$emit( 'selection', pokemon.id )">
                 {{ pokemon.name }}
             </li>
-        </ul>
+        </div>
     </div>
 </template>
 
@@ -23,10 +23,8 @@ export default {
 </script>
 
 <style scoped>
-    ul {
-    list-style-type: none;
-    }
     li {
+        list-style-type: none;
         background-color: white;
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.2);

@@ -37,6 +37,8 @@ export default {
 
     .pokemon-container {
         height: 200px;
+        justify-content: center;
+        flex: 0%;
     }
     img {
         height: 200px;
